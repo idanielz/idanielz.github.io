@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC9DAB411AB3BC0400B322CD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9DAB401AB3BC0400B322CD /* Icon.png */; };
+		BCB0FB291AB2F36100362C1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB0FB281AB2F36100362C1D /* Foundation.framework */; };
+		BCB0FB2B1AB2F36100362C1D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB0FB2A1AB2F36100362C1D /* CoreGraphics.framework */; };
+		BCB0FB2D1AB2F36100362C1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB0FB2C1AB2F36100362C1D /* UIKit.framework */; };
+		BCB0FB331AB2F36100362C1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCB0FB311AB2F36100362C1D /* InfoPlist.strings */; };
+		BCB0FB351AB2F36100362C1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0FB341AB2F36100362C1D /* main.m */; };
+		BCB0FB391AB2F36100362C1D /* ZJDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0FB381AB2F36100362C1D /* ZJDAppDelegate.m */; };
+		BCB0FB3B1AB2F36100362C1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB0FB3A1AB2F36100362C1D /* Images.xcassets */; };
+		BCB0FB421AB2F36100362C1D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB0FB411AB2F36100362C1D /* XCTest.framework */; };
+		BCB0FB431AB2F36100362C1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB0FB281AB2F36100362C1D /* Foundation.framework */; };
+		BCB0FB441AB2F36100362C1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB0FB2C1AB2F36100362C1D /* UIKit.framework */; };
+		BCB0FB4C1AB2F36100362C1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCB0FB4A1AB2F36100362C1D /* InfoPlist.strings */; };
+		BCB0FB4E1AB2F36100362C1D /* SnakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0FB4D1AB2F36100362C1D /* SnakeTests.m */; };
+		BCB0FB5C1AB2F39800362C1D /* ZJDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0FB5B1AB2F39800362C1D /* ZJDRootViewController.m */; };
+		BCB0FB5F1AB2F42800362C1D /* ZJDNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0FB5E1AB2F42800362C1D /* ZJDNode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCB0FB451AB2F36100362C1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCB0FB1D1AB2F36100362C1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCB0FB241AB2F36100362C1D;
+			remoteInfo = Snake;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC9DAB401AB3BC0400B322CD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BCB0FB251AB2F36100362C1D /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB0FB281AB2F36100362C1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BCB0FB2A1AB2F36100362C1D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BCB0FB2C1AB2F36100362C1D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BCB0FB301AB2F36100362C1D /* Snake-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Snake-Info.plist"; sourceTree = "<group>"; };
+		BCB0FB321AB2F36100362C1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BCB0FB341AB2F36100362C1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCB0FB361AB2F36100362C1D /* Snake-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Snake-Prefix.pch"; sourceTree = "<group>"; };
+		BCB0FB371AB2F36100362C1D /* ZJDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJDAppDelegate.h; sourceTree = "<group>"; };
+		BCB0FB381AB2F36100362C1D /* ZJDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJDAppDelegate.m; sourceTree = "<group>"; };
+		BCB0FB3A1AB2F36100362C1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BCB0FB401AB2F36100362C1D /* SnakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB0FB411AB2F36100362C1D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BCB0FB491AB2F36100362C1D /* SnakeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SnakeTests-Info.plist"; sourceTree = "<group>"; };
+		BCB0FB4B1AB2F36100362C1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BCB0FB4D1AB2F36100362C1D /* SnakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeTests.m; sourceTree = "<group>"; };
+		BCB0FB5A1AB2F39800362C1D /* ZJDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJDRootViewController.h; sourceTree = "<group>"; };
+		BCB0FB5B1AB2F39800362C1D /* ZJDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJDRootViewController.m; sourceTree = "<group>"; };
+		BCB0FB5D1AB2F42800362C1D /* ZJDNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJDNode.h; sourceTree = "<group>"; };
+		BCB0FB5E1AB2F42800362C1D /* ZJDNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJDNode.m; sourceTree = "<group>"; };
+		BCB0FB601AB2F43400362C1D /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCB0FB221AB2F36100362C1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB0FB2B1AB2F36100362C1D /* CoreGraphics.framework in Frameworks */,
+				BCB0FB2D1AB2F36100362C1D /* UIKit.framework in Frameworks */,
+				BCB0FB291AB2F36100362C1D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB0FB3D1AB2F36100362C1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB0FB421AB2F36100362C1D /* XCTest.framework in Frameworks */,
+				BCB0FB441AB2F36100362C1D /* UIKit.framework in Frameworks */,
+				BCB0FB431AB2F36100362C1D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCB0FB1C1AB2F36100362C1D = {
+			isa = PBXGroup;
+			children = (
+				BCB0FB2E1AB2F36100362C1D /* Snake */,
+				BCB0FB471AB2F36100362C1D /* SnakeTests */,
+				BCB0FB271AB2F36100362C1D /* Frameworks */,
+				BCB0FB261AB2F36100362C1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCB0FB261AB2F36100362C1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCB0FB251AB2F36100362C1D /* Snake.app */,
+				BCB0FB401AB2F36100362C1D /* SnakeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCB0FB271AB2F36100362C1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCB0FB281AB2F36100362C1D /* Foundation.framework */,
+				BCB0FB2A1AB2F36100362C1D /* CoreGraphics.framework */,
+				BCB0FB2C1AB2F36100362C1D /* UIKit.framework */,
+				BCB0FB411AB2F36100362C1D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCB0FB2E1AB2F36100362C1D /* Snake */ = {
+			isa = PBXGroup;
+			children = (
+				BCB0FB371AB2F36100362C1D /* ZJDAppDelegate.h */,
+				BCB0FB381AB2F36100362C1D /* ZJDAppDelegate.m */,
+				BCB0FB5A1AB2F39800362C1D /* ZJDRootViewController.h */,
+				BCB0FB5B1AB2F39800362C1D /* ZJDRootViewController.m */,
+				BCB0FB5D1AB2F42800362C1D /* ZJDNode.h */,
+				BCB0FB5E1AB2F42800362C1D /* ZJDNode.m */,
+				BCB0FB601AB2F43400362C1D /* Header.h */,
+				BCB0FB3A1AB2F36100362C1D /* Images.xcassets */,
+				BCB0FB2F1AB2F36100362C1D /* Supporting Files */,
+			);
+			path = Snake;
+			sourceTree = "<group>";
+		};
+		BCB0FB2F1AB2F36100362C1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC9DAB401AB3BC0400B322CD /* Icon.png */,
+				BCB0FB301AB2F36100362C1D /* Snake-Info.plist */,
+				BCB0FB311AB2F36100362C1D /* InfoPlist.strings */,
+				BCB0FB341AB2F36100362C1D /* main.m */,
+				BCB0FB361AB2F36100362C1D /* Snake-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCB0FB471AB2F36100362C1D /* SnakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCB0FB4D1AB2F36100362C1D /* SnakeTests.m */,
+				BCB0FB481AB2F36100362C1D /* Supporting Files */,
+			);
+			path = SnakeTests;
+			sourceTree = "<group>";
+		};
+		BCB0FB481AB2F36100362C1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCB0FB491AB2F36100362C1D /* SnakeTests-Info.plist */,
+				BCB0FB4A1AB2F36100362C1D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCB0FB241AB2F36100362C1D /* Snake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB0FB511AB2F36100362C1D /* Build configuration list for PBXNativeTarget "Snake" */;
+			buildPhases = (
+				BCB0FB211AB2F36100362C1D /* Sources */,
+				BCB0FB221AB2F36100362C1D /* Frameworks */,
+				BCB0FB231AB2F36100362C1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Snake;
+			productName = Snake;
+			productReference = BCB0FB251AB2F36100362C1D /* Snake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCB0FB3F1AB2F36100362C1D /* SnakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB0FB541AB2F36100362C1D /* Build configuration list for PBXNativeTarget "SnakeTests" */;
+			buildPhases = (
+				BCB0FB3C1AB2F36100362C1D /* Sources */,
+				BCB0FB3D1AB2F36100362C1D /* Frameworks */,
+				BCB0FB3E1AB2F36100362C1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCB0FB461AB2F36100362C1D /* PBXTargetDependency */,
+			);
+			name = SnakeTests;
+			productName = SnakeTests;
+			productReference = BCB0FB401AB2F36100362C1D /* SnakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCB0FB1D1AB2F36100362C1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZJD;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = ZJD;
+				TargetAttributes = {
+					BCB0FB3F1AB2F36100362C1D = {
+						TestTargetID = BCB0FB241AB2F36100362C1D;
+					};
+				};
+			};
+			buildConfigurationList = BCB0FB201AB2F36100362C1D /* Build configuration list for PBXProject "Snake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BCB0FB1C1AB2F36100362C1D;
+			productRefGroup = BCB0FB261AB2F36100362C1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCB0FB241AB2F36100362C1D /* Snake */,
+				BCB0FB3F1AB2F36100362C1D /* SnakeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCB0FB231AB2F36100362C1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9DAB411AB3BC0400B322CD /* Icon.png in Resources */,
+				BCB0FB331AB2F36100362C1D /* InfoPlist.strings in Resources */,
+				BCB0FB3B1AB2F36100362C1D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB0FB3E1AB2F36100362C1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB0FB4C1AB2F36100362C1D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCB0FB211AB2F36100362C1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB0FB351AB2F36100362C1D /* main.m in Sources */,
+				BCB0FB5F1AB2F42800362C1D /* ZJDNode.m in Sources */,
+				BCB0FB5C1AB2F39800362C1D /* ZJDRootViewController.m in Sources */,
+				BCB0FB391AB2F36100362C1D /* ZJDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB0FB3C1AB2F36100362C1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB0FB4E1AB2F36100362C1D /* SnakeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCB0FB461AB2F36100362C1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCB0FB241AB2F36100362C1D /* Snake */;
+			targetProxy = BCB0FB451AB2F36100362C1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCB0FB311AB2F36100362C1D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCB0FB321AB2F36100362C1D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BCB0FB4A1AB2F36100362C1D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCB0FB4B1AB2F36100362C1D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCB0FB4F1AB2F36100362C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BCB0FB501AB2F36100362C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCB0FB521AB2F36100362C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Snake/Snake-Prefix.pch";
+				INFOPLIST_FILE = "Snake/Snake-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BCB0FB531AB2F36100362C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Snake/Snake-Prefix.pch";
+				INFOPLIST_FILE = "Snake/Snake-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BCB0FB551AB2F36100362C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Snake.app/Snake";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Snake/Snake-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SnakeTests/SnakeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BCB0FB561AB2F36100362C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Snake.app/Snake";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Snake/Snake-Prefix.pch";
+				INFOPLIST_FILE = "SnakeTests/SnakeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCB0FB201AB2F36100362C1D /* Build configuration list for PBXProject "Snake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB0FB4F1AB2F36100362C1D /* Debug */,
+				BCB0FB501AB2F36100362C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCB0FB511AB2F36100362C1D /* Build configuration list for PBXNativeTarget "Snake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB0FB521AB2F36100362C1D /* Debug */,
+				BCB0FB531AB2F36100362C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCB0FB541AB2F36100362C1D /* Build configuration list for PBXNativeTarget "SnakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB0FB551AB2F36100362C1D /* Debug */,
+				BCB0FB561AB2F36100362C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCB0FB1D1AB2F36100362C1D /* Project object */;
+}

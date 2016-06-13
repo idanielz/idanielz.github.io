@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC2F13721AC2B79D00643430 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2F13711AC2B79D00643430 /* PageViewController.m */; };
+		BC2F13751AC2B82000643430 /* SubCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2F13741AC2B82000643430 /* SubCategoryModel.m */; };
+		BC2F13781AC2BCAE00643430 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2F13771AC2BCAE00643430 /* NewsModel.m */; };
+		BC2F137B1AC2C99600643430 /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2F137A1AC2C99600643430 /* CategoryModel.m */; };
+		BC3C5CCC1AC2AB5C00C0A907 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3C5CCB1AC2AB5C00C0A907 /* main.m */; };
+		BC3C5CCF1AC2AB5C00C0A907 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3C5CCE1AC2AB5C00C0A907 /* AppDelegate.m */; };
+		BC3C5CD51AC2AB5C00C0A907 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3C5CD31AC2AB5C00C0A907 /* Main.storyboard */; };
+		BC3C5CD71AC2AB5C00C0A907 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3C5CD61AC2AB5C00C0A907 /* Images.xcassets */; };
+		BC3C5CDA1AC2AB5C00C0A907 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3C5CD81AC2AB5C00C0A907 /* LaunchScreen.xib */; };
+		BC3C5CE61AC2AB5C00C0A907 /* MySinaNewsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3C5CE51AC2AB5C00C0A907 /* MySinaNewsDemoTests.m */; };
+		BC3C5CFB1AC2AB9B00C0A907 /* NSFileManager+PathSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3C5CF21AC2AB9B00C0A907 /* NSFileManager+PathSize.m */; };
+		BC3C5CFC1AC2AB9B00C0A907 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3C5CF41AC2AB9B00C0A907 /* NSString+MD5Addition.m */; };
+		BC3C5CFD1AC2AB9B00C0A907 /* QFHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3C5CF61AC2AB9B00C0A907 /* QFHttpManager.m */; };
+		BC3C5CFE1AC2AB9B00C0A907 /* QFHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3C5CF81AC2AB9B00C0A907 /* QFHttpRequest.m */; };
+		BC3C5CFF1AC2AB9B00C0A907 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3C5CFA1AC2AB9B00C0A907 /* RootViewController.m */; };
+		BC3C5D021AC2AEE800C0A907 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3C5D011AC2AEE800C0A907 /* MainViewController.m */; };
+		BC3C5D091AC2AF7000C0A907 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3C5D051AC2AF7000C0A907 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BC3C5D0A1AC2AF7000C0A907 /* QFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3C5D081AC2AF7000C0A907 /* QFScrollView.m */; };
+		BC3C5D0C1AC2AF8300C0A907 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3C5D0B1AC2AF8300C0A907 /* libxml2.dylib */; };
+		BC3C5D0F1AC2B12100C0A907 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3C5D0E1AC2B12100C0A907 /* CategoryViewController.m */; };
+		BCAB960E1AC3E3FE0034BC92 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB960D1AC3E3FE0034BC92 /* NewsDetailViewController.m */; };
+		BCAB961D1AC3EF4B0034BC92 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB96121AC3EF4B0034BC92 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BCAB961E1AC3EF4B0034BC92 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB96141AC3EF4B0034BC92 /* FMDatabaseAdditions.m */; };
+		BCAB961F1AC3EF4B0034BC92 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB96161AC3EF4B0034BC92 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BCAB96201AC3EF4B0034BC92 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB96181AC3EF4B0034BC92 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BCAB96211AC3EF4B0034BC92 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB961A1AC3EF4B0034BC92 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BCAB96221AC3EF4B0034BC92 /* ZJDDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB961C1AC3EF4B0034BC92 /* ZJDDataBaseManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BCAB96241AC3EF7F0034BC92 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BCAB96231AC3EF7F0034BC92 /* libsqlite3.dylib */; };
+		BCAB96271AC3F3550034BC92 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB96261AC3F3550034BC92 /* CacheManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC3C5CE01AC2AB5C00C0A907 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC3C5CBE1AC2AB5C00C0A907 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC3C5CC51AC2AB5C00C0A907;
+			remoteInfo = MySinaNewsDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC2F13701AC2B79D00643430 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		BC2F13711AC2B79D00643430 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		BC2F13731AC2B82000643430 /* SubCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubCategoryModel.h; sourceTree = "<group>"; };
+		BC2F13741AC2B82000643430 /* SubCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubCategoryModel.m; sourceTree = "<group>"; };
+		BC2F13761AC2BCAE00643430 /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		BC2F13771AC2BCAE00643430 /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		BC2F13791AC2C99600643430 /* CategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryModel.h; sourceTree = "<group>"; };
+		BC2F137A1AC2C99600643430 /* CategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryModel.m; sourceTree = "<group>"; };
+		BC3C5CC61AC2AB5C00C0A907 /* MySinaNewsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySinaNewsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3C5CCA1AC2AB5C00C0A907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC3C5CCB1AC2AB5C00C0A907 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC3C5CCD1AC2AB5C00C0A907 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC3C5CCE1AC2AB5C00C0A907 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC3C5CD41AC2AB5C00C0A907 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC3C5CD61AC2AB5C00C0A907 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BC3C5CD91AC2AB5C00C0A907 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BC3C5CDF1AC2AB5C00C0A907 /* MySinaNewsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySinaNewsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3C5CE41AC2AB5C00C0A907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC3C5CE51AC2AB5C00C0A907 /* MySinaNewsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySinaNewsDemoTests.m; sourceTree = "<group>"; };
+		BC3C5CEF1AC2AB9400C0A907 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		BC3C5CF11AC2AB9B00C0A907 /* NSFileManager+PathSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+PathSize.h"; sourceTree = "<group>"; };
+		BC3C5CF21AC2AB9B00C0A907 /* NSFileManager+PathSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+PathSize.m"; sourceTree = "<group>"; };
+		BC3C5CF31AC2AB9B00C0A907 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		BC3C5CF41AC2AB9B00C0A907 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		BC3C5CF51AC2AB9B00C0A907 /* QFHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFHttpManager.h; sourceTree = "<group>"; };
+		BC3C5CF61AC2AB9B00C0A907 /* QFHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFHttpManager.m; sourceTree = "<group>"; };
+		BC3C5CF71AC2AB9B00C0A907 /* QFHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFHttpRequest.h; sourceTree = "<group>"; };
+		BC3C5CF81AC2AB9B00C0A907 /* QFHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFHttpRequest.m; sourceTree = "<group>"; };
+		BC3C5CF91AC2AB9B00C0A907 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		BC3C5CFA1AC2AB9B00C0A907 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		BC3C5D001AC2AEE800C0A907 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BC3C5D011AC2AEE800C0A907 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BC3C5D041AC2AF7000C0A907 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		BC3C5D051AC2AF7000C0A907 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		BC3C5D071AC2AF7000C0A907 /* QFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFScrollView.h; sourceTree = "<group>"; };
+		BC3C5D081AC2AF7000C0A907 /* QFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFScrollView.m; sourceTree = "<group>"; };
+		BC3C5D0B1AC2AF8300C0A907 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		BC3C5D0D1AC2B12100C0A907 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryViewController.h; path = MySinaNewsDemo/CategoryViewController.h; sourceTree = SOURCE_ROOT; };
+		BC3C5D0E1AC2B12100C0A907 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryViewController.m; path = MySinaNewsDemo/CategoryViewController.m; sourceTree = SOURCE_ROOT; };
+		BCAB960C1AC3E3FE0034BC92 /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
+		BCAB960D1AC3E3FE0034BC92 /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
+		BCAB96111AC3EF4B0034BC92 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		BCAB96121AC3EF4B0034BC92 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		BCAB96131AC3EF4B0034BC92 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		BCAB96141AC3EF4B0034BC92 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		BCAB96151AC3EF4B0034BC92 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		BCAB96161AC3EF4B0034BC92 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		BCAB96171AC3EF4B0034BC92 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		BCAB96181AC3EF4B0034BC92 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		BCAB96191AC3EF4B0034BC92 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		BCAB961A1AC3EF4B0034BC92 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		BCAB961B1AC3EF4B0034BC92 /* ZJDDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJDDataBaseManager.h; sourceTree = "<group>"; };
+		BCAB961C1AC3EF4B0034BC92 /* ZJDDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJDDataBaseManager.m; sourceTree = "<group>"; };
+		BCAB96231AC3EF7F0034BC92 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		BCAB96251AC3F3550034BC92 /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CacheManager.h; path = MySinaNewsDemo/CacheManager.h; sourceTree = SOURCE_ROOT; };
+		BCAB96261AC3F3550034BC92 /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CacheManager.m; path = MySinaNewsDemo/CacheManager.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC3C5CC31AC2AB5C00C0A907 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAB96241AC3EF7F0034BC92 /* libsqlite3.dylib in Frameworks */,
+				BC3C5D0C1AC2AF8300C0A907 /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC3C5CDC1AC2AB5C00C0A907 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC3C5CBD1AC2AB5C00C0A907 = {
+			isa = PBXGroup;
+			children = (
+				BCAB96231AC3EF7F0034BC92 /* libsqlite3.dylib */,
+				BC3C5D0B1AC2AF8300C0A907 /* libxml2.dylib */,
+				BC3C5CC81AC2AB5C00C0A907 /* MySinaNewsDemo */,
+				BC3C5CE21AC2AB5C00C0A907 /* MySinaNewsDemoTests */,
+				BC3C5CC71AC2AB5C00C0A907 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3C5CC71AC2AB5C00C0A907 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C5CC61AC2AB5C00C0A907 /* MySinaNewsDemo.app */,
+				BC3C5CDF1AC2AB5C00C0A907 /* MySinaNewsDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3C5CC81AC2AB5C00C0A907 /* MySinaNewsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C5CCD1AC2AB5C00C0A907 /* AppDelegate.h */,
+				BC3C5CCE1AC2AB5C00C0A907 /* AppDelegate.m */,
+				BC3C5D001AC2AEE800C0A907 /* MainViewController.h */,
+				BC3C5D011AC2AEE800C0A907 /* MainViewController.m */,
+				BC2F13791AC2C99600643430 /* CategoryModel.h */,
+				BC2F137A1AC2C99600643430 /* CategoryModel.m */,
+				BC3C5D0D1AC2B12100C0A907 /* CategoryViewController.h */,
+				BC3C5D0E1AC2B12100C0A907 /* CategoryViewController.m */,
+				BCAB960C1AC3E3FE0034BC92 /* NewsDetailViewController.h */,
+				BCAB960D1AC3E3FE0034BC92 /* NewsDetailViewController.m */,
+				BC2F13701AC2B79D00643430 /* PageViewController.h */,
+				BC2F13711AC2B79D00643430 /* PageViewController.m */,
+				BC2F13731AC2B82000643430 /* SubCategoryModel.h */,
+				BC2F13741AC2B82000643430 /* SubCategoryModel.m */,
+				BC2F13761AC2BCAE00643430 /* NewsModel.h */,
+				BC2F13771AC2BCAE00643430 /* NewsModel.m */,
+				BC3C5CD31AC2AB5C00C0A907 /* Main.storyboard */,
+				BC3C5CD61AC2AB5C00C0A907 /* Images.xcassets */,
+				BC3C5CD81AC2AB5C00C0A907 /* LaunchScreen.xib */,
+				BC3C5CC91AC2AB5C00C0A907 /* Supporting Files */,
+			);
+			path = MySinaNewsDemo;
+			sourceTree = "<group>";
+		};
+		BC3C5CC91AC2AB5C00C0A907 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C5CF01AC2AB9B00C0A907 /* library */,
+				BC3C5CEF1AC2AB9400C0A907 /* Header.h */,
+				BC3C5CCA1AC2AB5C00C0A907 /* Info.plist */,
+				BC3C5CCB1AC2AB5C00C0A907 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC3C5CE21AC2AB5C00C0A907 /* MySinaNewsDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C5CE51AC2AB5C00C0A907 /* MySinaNewsDemoTests.m */,
+				BC3C5CE31AC2AB5C00C0A907 /* Supporting Files */,
+			);
+			path = MySinaNewsDemoTests;
+			sourceTree = "<group>";
+		};
+		BC3C5CE31AC2AB5C00C0A907 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C5CE41AC2AB5C00C0A907 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC3C5CF01AC2AB9B00C0A907 /* library */ = {
+			isa = PBXGroup;
+			children = (
+				BCAB960F1AC3EF4B0034BC92 /* ZJDDataBaseManager */,
+				BC3C5D031AC2AF7000C0A907 /* GDataXMLNode */,
+				BC3C5D061AC2AF7000C0A907 /* QFScrollView */,
+				BC3C5CF11AC2AB9B00C0A907 /* NSFileManager+PathSize.h */,
+				BC3C5CF21AC2AB9B00C0A907 /* NSFileManager+PathSize.m */,
+				BC3C5CF31AC2AB9B00C0A907 /* NSString+MD5Addition.h */,
+				BC3C5CF41AC2AB9B00C0A907 /* NSString+MD5Addition.m */,
+				BC3C5CF51AC2AB9B00C0A907 /* QFHttpManager.h */,
+				BC3C5CF61AC2AB9B00C0A907 /* QFHttpManager.m */,
+				BC3C5CF71AC2AB9B00C0A907 /* QFHttpRequest.h */,
+				BC3C5CF81AC2AB9B00C0A907 /* QFHttpRequest.m */,
+				BC3C5CF91AC2AB9B00C0A907 /* RootViewController.h */,
+				BC3C5CFA1AC2AB9B00C0A907 /* RootViewController.m */,
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		BC3C5D031AC2AF7000C0A907 /* GDataXMLNode */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C5D041AC2AF7000C0A907 /* GDataXMLNode.h */,
+				BC3C5D051AC2AF7000C0A907 /* GDataXMLNode.m */,
+			);
+			path = GDataXMLNode;
+			sourceTree = "<group>";
+		};
+		BC3C5D061AC2AF7000C0A907 /* QFScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C5D071AC2AF7000C0A907 /* QFScrollView.h */,
+				BC3C5D081AC2AF7000C0A907 /* QFScrollView.m */,
+			);
+			path = QFScrollView;
+			sourceTree = "<group>";
+		};
+		BCAB960F1AC3EF4B0034BC92 /* ZJDDataBaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				BCAB96251AC3F3550034BC92 /* CacheManager.h */,
+				BCAB96261AC3F3550034BC92 /* CacheManager.m */,
+				BCAB96101AC3EF4B0034BC92 /* fmdb */,
+				BCAB961B1AC3EF4B0034BC92 /* ZJDDataBaseManager.h */,
+				BCAB961C1AC3EF4B0034BC92 /* ZJDDataBaseManager.m */,
+			);
+			name = ZJDDataBaseManager;
+			path = MySinaNewsDemo/library/ZJDDataBaseManager;
+			sourceTree = SOURCE_ROOT;
+		};
+		BCAB96101AC3EF4B0034BC92 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				BCAB96111AC3EF4B0034BC92 /* FMDatabase.h */,
+				BCAB96121AC3EF4B0034BC92 /* FMDatabase.m */,
+				BCAB96131AC3EF4B0034BC92 /* FMDatabaseAdditions.h */,
+				BCAB96141AC3EF4B0034BC92 /* FMDatabaseAdditions.m */,
+				BCAB96151AC3EF4B0034BC92 /* FMDatabasePool.h */,
+				BCAB96161AC3EF4B0034BC92 /* FMDatabasePool.m */,
+				BCAB96171AC3EF4B0034BC92 /* FMDatabaseQueue.h */,
+				BCAB96181AC3EF4B0034BC92 /* FMDatabaseQueue.m */,
+				BCAB96191AC3EF4B0034BC92 /* FMResultSet.h */,
+				BCAB961A1AC3EF4B0034BC92 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC3C5CC51AC2AB5C00C0A907 /* MySinaNewsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC3C5CE91AC2AB5C00C0A907 /* Build configuration list for PBXNativeTarget "MySinaNewsDemo" */;
+			buildPhases = (
+				BC3C5CC21AC2AB5C00C0A907 /* Sources */,
+				BC3C5CC31AC2AB5C00C0A907 /* Frameworks */,
+				BC3C5CC41AC2AB5C00C0A907 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySinaNewsDemo;
+			productName = MySinaNewsDemo;
+			productReference = BC3C5CC61AC2AB5C00C0A907 /* MySinaNewsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC3C5CDE1AC2AB5C00C0A907 /* MySinaNewsDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC3C5CEC1AC2AB5C00C0A907 /* Build configuration list for PBXNativeTarget "MySinaNewsDemoTests" */;
+			buildPhases = (
+				BC3C5CDB1AC2AB5C00C0A907 /* Sources */,
+				BC3C5CDC1AC2AB5C00C0A907 /* Frameworks */,
+				BC3C5CDD1AC2AB5C00C0A907 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC3C5CE11AC2AB5C00C0A907 /* PBXTargetDependency */,
+			);
+			name = MySinaNewsDemoTests;
+			productName = MySinaNewsDemoTests;
+			productReference = BC3C5CDF1AC2AB5C00C0A907 /* MySinaNewsDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC3C5CBE1AC2AB5C00C0A907 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ZJD;
+				TargetAttributes = {
+					BC3C5CC51AC2AB5C00C0A907 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					BC3C5CDE1AC2AB5C00C0A907 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = BC3C5CC51AC2AB5C00C0A907;
+					};
+				};
+			};
+			buildConfigurationList = BC3C5CC11AC2AB5C00C0A907 /* Build configuration list for PBXProject "MySinaNewsDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC3C5CBD1AC2AB5C00C0A907;
+			productRefGroup = BC3C5CC71AC2AB5C00C0A907 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC3C5CC51AC2AB5C00C0A907 /* MySinaNewsDemo */,
+				BC3C5CDE1AC2AB5C00C0A907 /* MySinaNewsDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC3C5CC41AC2AB5C00C0A907 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC3C5CD51AC2AB5C00C0A907 /* Main.storyboard in Resources */,
+				BC3C5CDA1AC2AB5C00C0A907 /* LaunchScreen.xib in Resources */,
+				BC3C5CD71AC2AB5C00C0A907 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC3C5CDD1AC2AB5C00C0A907 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC3C5CC21AC2AB5C00C0A907 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC3C5CFC1AC2AB9B00C0A907 /* NSString+MD5Addition.m in Sources */,
+				BC3C5CFF1AC2AB9B00C0A907 /* RootViewController.m in Sources */,
+				BCAB961F1AC3EF4B0034BC92 /* FMDatabasePool.m in Sources */,
+				BC3C5CFE1AC2AB9B00C0A907 /* QFHttpRequest.m in Sources */,
+				BC3C5D0F1AC2B12100C0A907 /* CategoryViewController.m in Sources */,
+				BCAB96201AC3EF4B0034BC92 /* FMDatabaseQueue.m in Sources */,
+				BCAB961D1AC3EF4B0034BC92 /* FMDatabase.m in Sources */,
+				BCAB961E1AC3EF4B0034BC92 /* FMDatabaseAdditions.m in Sources */,
+				BCAB960E1AC3E3FE0034BC92 /* NewsDetailViewController.m in Sources */,
+				BCAB96211AC3EF4B0034BC92 /* FMResultSet.m in Sources */,
+				BCAB96271AC3F3550034BC92 /* CacheManager.m in Sources */,
+				BC3C5D021AC2AEE800C0A907 /* MainViewController.m in Sources */,
+				BC3C5D0A1AC2AF7000C0A907 /* QFScrollView.m in Sources */,
+				BC2F13781AC2BCAE00643430 /* NewsModel.m in Sources */,
+				BCAB96221AC3EF4B0034BC92 /* ZJDDataBaseManager.m in Sources */,
+				BC3C5CCF1AC2AB5C00C0A907 /* AppDelegate.m in Sources */,
+				BC3C5D091AC2AF7000C0A907 /* GDataXMLNode.m in Sources */,
+				BC3C5CFB1AC2AB9B00C0A907 /* NSFileManager+PathSize.m in Sources */,
+				BC2F13751AC2B82000643430 /* SubCategoryModel.m in Sources */,
+				BC3C5CFD1AC2AB9B00C0A907 /* QFHttpManager.m in Sources */,
+				BC3C5CCC1AC2AB5C00C0A907 /* main.m in Sources */,
+				BC2F137B1AC2C99600643430 /* CategoryModel.m in Sources */,
+				BC2F13721AC2B79D00643430 /* PageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC3C5CDB1AC2AB5C00C0A907 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC3C5CE61AC2AB5C00C0A907 /* MySinaNewsDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC3C5CE11AC2AB5C00C0A907 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC3C5CC51AC2AB5C00C0A907 /* MySinaNewsDemo */;
+			targetProxy = BC3C5CE01AC2AB5C00C0A907 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC3C5CD31AC2AB5C00C0A907 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC3C5CD41AC2AB5C00C0A907 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC3C5CD81AC2AB5C00C0A907 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC3C5CD91AC2AB5C00C0A907 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC3C5CE71AC2AB5C00C0A907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC3C5CE81AC2AB5C00C0A907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC3C5CEA1AC2AB5C00C0A907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = MySinaNewsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC3C5CEB1AC2AB5C00C0A907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = MySinaNewsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BC3C5CED1AC2AB5C00C0A907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MySinaNewsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySinaNewsDemo.app/MySinaNewsDemo";
+			};
+			name = Debug;
+		};
+		BC3C5CEE1AC2AB5C00C0A907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MySinaNewsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySinaNewsDemo.app/MySinaNewsDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC3C5CC11AC2AB5C00C0A907 /* Build configuration list for PBXProject "MySinaNewsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC3C5CE71AC2AB5C00C0A907 /* Debug */,
+				BC3C5CE81AC2AB5C00C0A907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC3C5CE91AC2AB5C00C0A907 /* Build configuration list for PBXNativeTarget "MySinaNewsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC3C5CEA1AC2AB5C00C0A907 /* Debug */,
+				BC3C5CEB1AC2AB5C00C0A907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC3C5CEC1AC2AB5C00C0A907 /* Build configuration list for PBXNativeTarget "MySinaNewsDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC3C5CED1AC2AB5C00C0A907 /* Debug */,
+				BC3C5CEE1AC2AB5C00C0A907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC3C5CBE1AC2AB5C00C0A907 /* Project object */;
+}
