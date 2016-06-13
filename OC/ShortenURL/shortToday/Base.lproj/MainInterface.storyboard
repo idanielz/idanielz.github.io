@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" preservesSuperviewLayoutMargins="YES" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddg-aW-Feq">
+                                <rect key="frame" x="213" y="36" width="106.5" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="copy">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="copyUrl:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="GG5-cJ-XNg"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YuP-ev-nu2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="n8D-A2-adg"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEr-Fu-UhW">
+                                <rect key="frame" x="106" y="36" width="107" height="30"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.1843137255" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="shorten">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shortenUrl:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="tPZ-GW-zWc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MO0-OV-JFQ">
+                                <rect key="frame" x="0.0" y="36" width="106.5" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="paste">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pasteUrl:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="bnd-6z-nPE"/>
+                                    <action selector="shortenUrl:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Amy-vp-rQc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YuP-ev-nu2" secondAttribute="trailing" id="04A-ke-GbC"/>
+                            <constraint firstItem="ddg-aW-Feq" firstAttribute="top" secondItem="YuP-ev-nu2" secondAttribute="bottom" id="5WK-Ha-4tx"/>
+                            <constraint firstAttribute="trailing" secondItem="ddg-aW-Feq" secondAttribute="trailing" id="A1A-LQ-6Zz"/>
+                            <constraint firstItem="xEr-Fu-UhW" firstAttribute="top" secondItem="YuP-ev-nu2" secondAttribute="bottom" id="Ctp-Im-hsl"/>
+                            <constraint firstItem="YuP-ev-nu2" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="FF0-Aw-gtx"/>
+                            <constraint firstItem="ddg-aW-Feq" firstAttribute="leading" secondItem="xEr-Fu-UhW" secondAttribute="trailing" id="LdM-94-s5b"/>
+                            <constraint firstItem="ddg-aW-Feq" firstAttribute="height" secondItem="MO0-OV-JFQ" secondAttribute="height" id="LwS-nt-pUk"/>
+                            <constraint firstItem="xEr-Fu-UhW" firstAttribute="width" secondItem="MO0-OV-JFQ" secondAttribute="width" id="ZXV-BM-QB1"/>
+                            <constraint firstItem="YuP-ev-nu2" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="e7V-1K-jmv"/>
+                            <constraint firstItem="ddg-aW-Feq" firstAttribute="width" secondItem="MO0-OV-JFQ" secondAttribute="width" id="eQN-V3-8JQ"/>
+                            <constraint firstItem="xEr-Fu-UhW" firstAttribute="height" secondItem="MO0-OV-JFQ" secondAttribute="height" id="pUR-eF-pJ2"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="MO0-OV-JFQ" secondAttribute="bottom" constant="1" id="stl-Ba-8Bk"/>
+                            <constraint firstItem="MO0-OV-JFQ" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="t3h-9h-JB3"/>
+                            <constraint firstItem="xEr-Fu-UhW" firstAttribute="leading" secondItem="MO0-OV-JFQ" secondAttribute="trailing" id="vSB-yf-ExA"/>
+                            <constraint firstItem="MO0-OV-JFQ" firstAttribute="top" secondItem="YuP-ev-nu2" secondAttribute="bottom" id="zR5-6a-HHc"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="67"/>
+                    <connections>
+                        <outlet property="cpBtn" destination="ddg-aW-Feq" id="fBh-cF-Pvj"/>
+                        <outlet property="ptBtn" destination="MO0-OV-JFQ" id="M8r-yL-NMS"/>
+                        <outlet property="shortenBtn" destination="xEr-Fu-UhW" id="hb3-4T-tfr"/>
+                        <outlet property="urlTextField" destination="YuP-ev-nu2" id="IvA-s0-wNr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="284.5"/>
+        </scene>
+    </scenes>
+</document>

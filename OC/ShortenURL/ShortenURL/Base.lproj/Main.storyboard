@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Please Input URL" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qka-86-w7y">
+                                <rect key="frame" x="0.0" y="144" width="375" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hF3-ax-jjB"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" keyboardAppearance="alert" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="KPF-nE-fPy"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jF1-2n-hIE">
+                                <rect key="frame" x="0.0" y="302" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uqf-3r-9Tp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Shorten URL"/>
+                                <connections>
+                                    <action selector="copyTinyUrl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v0I-iC-hnm"/>
+                                    <action selector="touchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="rED-Os-wq1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MPArrowDown" translatesAutoresizingMaskIntoConstraints="NO" id="RqE-0A-vBB">
+                                <rect key="frame" x="179" y="225" width="16" height="64"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="RqE-0A-vBB" secondAttribute="trailing" constant="157" id="DpH-z7-c03"/>
+                            <constraint firstItem="RqE-0A-vBB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="156" id="NXB-tC-cd2"/>
+                            <constraint firstItem="jF1-2n-hIE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PSh-Js-nvr"/>
+                            <constraint firstItem="RqE-0A-vBB" firstAttribute="top" secondItem="qka-86-w7y" secondAttribute="bottom" constant="31" id="PSr-Yn-b3D"/>
+                            <constraint firstItem="qka-86-w7y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="124" id="Q6e-iA-B6W"/>
+                            <constraint firstItem="jF1-2n-hIE" firstAttribute="top" secondItem="qka-86-w7y" secondAttribute="bottom" constant="108" id="QVg-dR-QZU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jF1-2n-hIE" secondAttribute="bottom" constant="355" id="Vlh-5M-Ad1"/>
+                            <constraint firstItem="qka-86-w7y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Yy0-mT-m72"/>
+                            <constraint firstAttribute="trailing" secondItem="qka-86-w7y" secondAttribute="trailing" id="dbG-RW-Af4"/>
+                            <constraint firstAttribute="trailing" secondItem="jF1-2n-hIE" secondAttribute="trailing" id="fyj-7w-iGG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qka-86-w7y" secondAttribute="bottom" constant="493" id="hdz-AP-J0e"/>
+                            <constraint firstItem="qka-86-w7y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lo0-5Q-WeP"/>
+                            <constraint firstItem="jF1-2n-hIE" firstAttribute="top" secondItem="RqE-0A-vBB" secondAttribute="bottom" constant="13" id="mBi-IB-ggg"/>
+                            <constraint firstItem="RqE-0A-vBB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wON-st-tJ6"/>
+                            <constraint firstAttribute="trailing" secondItem="qka-86-w7y" secondAttribute="trailing" id="xuK-Ih-WKC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DpH-z7-c03"/>
+                                <exclude reference="NXB-tC-cd2"/>
+                                <exclude reference="Vlh-5M-Ad1"/>
+                                <exclude reference="hdz-AP-J0e"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="arrowImageView" destination="RqE-0A-vBB" id="jSg-vN-LML"/>
+                        <outlet property="originUrlTF" destination="qka-86-w7y" id="FJX-NU-P6z"/>
+                        <outlet property="tinyUrlBtn" destination="jF1-2n-hIE" id="cbE-g7-0dO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="320.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MPArrowDown" width="16" height="24"/>
+    </resources>
+</document>
