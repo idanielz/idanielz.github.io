@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A06926EB1D124F0A00A516F6 /* AttributeStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06926EA1D124F0A00A516F6 /* AttributeStringViewController.m */; };
 		A0B392EE1D0D65CD00278FC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B392ED1D0D65CD00278FC5 /* main.m */; };
 		A0B392F11D0D65CD00278FC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B392F01D0D65CD00278FC5 /* AppDelegate.m */; };
 		A0B392F41D0D65CD00278FC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B392F31D0D65CD00278FC5 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A06926E91D124F0A00A516F6 /* AttributeStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeStringViewController.h; sourceTree = "<group>"; };
+		A06926EA1D124F0A00A516F6 /* AttributeStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeStringViewController.m; sourceTree = "<group>"; };
 		A0B392E91D0D65CD00278FC5 /* TEST_IPHONE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEST_IPHONE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B392ED1D0D65CD00278FC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0B392EF1D0D65CD00278FC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				A0B392F01D0D65CD00278FC5 /* AppDelegate.m */,
 				A0B392F21D0D65CD00278FC5 /* ViewController.h */,
 				A0B392F31D0D65CD00278FC5 /* ViewController.m */,
+				A06926E91D124F0A00A516F6 /* AttributeStringViewController.h */,
+				A06926EA1D124F0A00A516F6 /* AttributeStringViewController.m */,
 				A0B3932C1D0D6BF200278FC5 /* OrientationImage */,
 				A0B393221D0D6A8F00278FC5 /* BlockMRC */,
 				A0B392F51D0D65CD00278FC5 /* Main.storyboard */,
@@ -310,6 +315,7 @@
 				A0B392F41D0D65CD00278FC5 /* ViewController.m in Sources */,
 				A0B392F11D0D65CD00278FC5 /* AppDelegate.m in Sources */,
 				A0B392EE1D0D65CD00278FC5 /* main.m in Sources */,
+				A06926EB1D124F0A00A516F6 /* AttributeStringViewController.m in Sources */,
 				A0B3932B1D0D6BEC00278FC5 /* OrientationImageVIewController.m in Sources */,
 				A0B393211D0D69C500278FC5 /* BlockMRCViewController.m in Sources */,
 				A0B3932A1D0D6BEC00278FC5 /* OrientationImageVIew.m in Sources */,
@@ -536,6 +542,7 @@
 				A0B393181D0D65CD00278FC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0B393191D0D65CD00278FC5 /* Build configuration list for PBXNativeTarget "TEST_IPHONETests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +551,7 @@
 				A0B3931B1D0D65CD00278FC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0B3931C1D0D65CD00278FC5 /* Build configuration list for PBXNativeTarget "TEST_IPHONEUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +560,7 @@
 				A0B3931E1D0D65CD00278FC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

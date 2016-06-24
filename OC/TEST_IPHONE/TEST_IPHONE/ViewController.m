@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "BlockMRCViewController.h"
 #import "OrientationImageViewController.h"
+#import "AttributeStringViewController.h"
+
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView * tableView;
@@ -40,6 +42,7 @@
 {
     [self addCellBlockMRC];
     [self addCellOrientationImage];
+    [self addAttributeStringVC];
     [self.tableView reloadData];
 }
 
@@ -54,6 +57,13 @@
 - (void)addCellOrientationImage
 {
     [self.dataSource addObject:@"OrientationImage"];
+}
+#pragma mark -
+
+#pragma mark - AttributeStringVC
+- (void)addAttributeStringVC
+{
+    [self.dataSource addObject:@"AttributeStringVC"];
 }
 #pragma mark -
 - (void)didReceiveMemoryWarning {
@@ -96,6 +106,12 @@
         {
             OrientationImageViewController *orientationImageVC = [[OrientationImageViewController alloc]init];
             [self.navigationController pushViewController:orientationImageVC animated:YES];
+        }
+            break;
+        case 2:
+        {
+            AttributeStringViewController *attributeStrVC = [[AttributeStringViewController alloc]init];
+            [self.navigationController pushViewController:attributeStrVC animated:YES];
         }
             break;
         default:
