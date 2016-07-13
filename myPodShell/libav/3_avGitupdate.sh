@@ -1,6 +1,7 @@
 #!/bin/bash - 
 
 . ./avConfig.conf
+MYPATH=`pwd`
 #1. 更新最新pod
 echo "cd $AVPodPath"
 cd $AVPodPath
@@ -14,7 +15,7 @@ git checkout .
 git pull --rebase
 
 #3. 将mklib.sh拷贝到scripts目录
-cp /Users/zhangjidong/Desktop/myPodShell/libav/mklib.sh $AVCodePath/scripts
+cp $MYPATH/mklib.sh $AVCodePath/scripts
 
 #4. 打包
 echo "cd $AVCodePath/scripts"
