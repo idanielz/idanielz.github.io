@@ -9,7 +9,7 @@ git checkout .
 git pull --rebase
 
 #2. 将mklib.sh拷贝到scripts目录
-cp $LibPath/* $PodPath
+cp -rf $LibPath/* $PodPath
 
 
 #3. 修改spec文件
