@@ -20,6 +20,9 @@
 
 #alias bsimlib='xcodebuild -arch i386 -sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/'
 #alias barmlib='xcodebuild -arch armv7 -sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/'
+sed -i "" '/kQYPlayerControllerVersion/ s/[0-9].*[0-9]/'"$(git log --pretty=format:"%ad" -1 --date=iso-local | git log --pretty=format:"%ad" -1 --date=iso-local | cut -d' ' -f1,2)"'/g' ../QYPlayerController/QYPlayerControllerVersion.h
+git update-index --assume-unchanged ../QYPlayerController/QYPlayerControllerVersion.h
+
 . ./config.conf 
 
 BUILDDATE=$(date +%s)
